@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardElevation="6dp"
+    android:layout_margin="16dp"
+    app:cardCornerRadius="8dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp">
+        
+        <ImageView
+            android:id="@+id/imageProduct"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_width="60dp"
+            android:layout_height="50dp"/>
+        <TextView
+            android:id="@+id/productName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="PRODUCT NAME"
+            android:layout_alignParentStart="true"
+
+
+            />
+        <TextView
+            android:id="@+id/productPrice"
+            android:layout_below="@id/productName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="PRICE"
+
+
+            />
+        <TextView
+            android:id="@+id/productStock"
+            android:layout_below="@id/productPrice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="PRODUCT STOCK"
+
+            />
+        <TextView
+            android:id="@+id/productDescription"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="PRODUCT DESC"
+            android:layout_below="@id/productStock"
+
+            />
+
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>
