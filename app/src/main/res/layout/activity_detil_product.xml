@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+        <variable
+            name="product"
+            type="com.example.chapter4_topic3.ProductData" />
+
+    </data>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="20dp"
+        tools:context=".DetailProductActivity">
+
+        <TextView
+            android:id="@+id/detailProduct"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="DETAIL PRODUCT"
+            android:layout_centerHorizontal="true"
+            android:textSize="26sp" />
+
+        <ImageView
+            android:id="@+id/imgDetailProduct"
+            android:layout_width="250dp"
+            android:layout_height="250dp"
+            android:layout_below="@id/detailProduct"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:src='@{product.imgProduct}'
+
+            />
+
+        <TextView
+            android:id="@+id/productNameDetailProduct"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/imgDetailProduct"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:text="LAPTOP ACER"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/productPriceDetailProduct"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/productNameDetailProduct"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:text="Rp 50000"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/productDescDetailProduct"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/productPriceDetailProduct"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="15dp"
+            android:text="DEskripsi Produk"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/btnBuy"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:text="BUY" />
+
+    </RelativeLayout>
+</layout>
