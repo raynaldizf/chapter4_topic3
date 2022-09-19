@@ -31,7 +31,7 @@
             android:layout_below="@id/detailProduct"
             android:layout_centerHorizontal="true"
             android:layout_marginTop="20dp"
-            android:src='@{product.imgProduct}'
+            android:src="@drawable/ic_launcher_background"
 
             />
 
